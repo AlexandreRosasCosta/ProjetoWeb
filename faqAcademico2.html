@@ -7,8 +7,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
-    <link rel="stylesheet" href="CSS/sobreDAINF.css">
-    <title>Navegação</title>
+    <link rel="stylesheet" href="CSS/faqAcedemico.css">
+    <title>Dúvidas Acadêmicas</title>
 </head>
 <body>
     <header>
@@ -46,51 +46,74 @@
                     <div class="item"><a href="login.html">Login</a></div>
                     <div class="item">
                     <div class="item"><a href="sobreDAINF.html"><i class="fas fa-info-circle"></i>Sobre</a></div>
-                      </div>
                     </div>
                   </div>
                 </div>
-              </nav>
-            </header>
-            
-              <script type="text/javascript">
-                  $(document).ready(function(){
-            
-                  $('.sub-btn').click(function(){
-                    $(this).next('.sub-menu').slideToggle();
-                    $(this).find('.dropdown').toggleClass('rotate');
-                  });
-            
-                  $('.menu-btn').click(function(){
-                    $('.side-bar').addClass('active');
-                    $('.menu-btn').css("visibility", "hidden");
-                  });
-            
-                  $('.close-btn').click(function(){
-                    $('.side-bar').removeClass('active');
-                    $('.menu-btn').css("visibility", "visible");
-                  });
-            
-              });
-              </script>
+              </div>
+            </nav>
+
+            <script type="text/javascript">
+                $(document).ready(function(){
+          
+                $('.sub-btn').click(function(){
+                  $(this).next('.sub-menu').slideToggle();
+                  $(this).find('.dropdown').toggleClass('rotate');
+                });
+          
+                $('.menu-btn').click(function(){
+                  $('.side-bar').addClass('active');
+                  $('.menu-btn').css("visibility", "hidden");
+                });
+          
+                $('.close-btn').click(function(){
+                  $('.side-bar').removeClass('active');
+                  $('.menu-btn').css("visibility", "visible");
+                });
+          
+            });
+            </script>
         </section>
     </header>
     <main>
         <section class="bloco-principal">
-            <h1 id="titulo">DAINF estrutura</h1>
-            <div id="conteudo">
-                <p>O DAINF conta com 8 laboratórios, sendo um dos laboratórios dedicado para as disciplinas de Manutenção de Computadores, Redes de Computadores, Arquitetura de Computadores e Sistemas Distribuídos.</p>
-                <p>Todos os laboratórios estão equipados com projetores interativos, similares ao apresentado nesse <a href="https://www.youtube.com/watch?v=APLCDOvc83Y">video</a>.</p>
-                <a href="descricaoLab.html">Descrição dos laboratórios</a>
-                <p>Reservas de Laboratórios - enviar e-mail para dainf-pg at utfpr dot edu dot br - sempre na semana anterior a sua utilização, indicando o nome do professor solicitante, o código da disciplina e da turma, além de informar o tipo de software que será utilizado.</p>
-                <a href="imagensDAINF.html">Imagens da estrutura do DAINF</a>
+            <h1 id="titulo">Dúvidas Acadêmicas</h1>
+            <div id="bloco-1">
+                <h1><a href="Respostas/resposta6.html">
+                    Enviei e-mail para o coordenador mas ele não me respondeu. O que faço?
+                </a></h1>
+            </div>
+            <div id="bloco-1">
+                <h1><a href="Respostas/resposta7.html">
+                    Faltei aulas por estar de licença médica. Tenho direito a abonar minhas faltas?
+                </a></h1>
+            </div>
+            <div id="bloco-1">
+                <h1><a href="Respostas/resposta8.html">
+                    Fiz uma disciplina que, ao meu ver, deveria entrar como optativa no meu histórico mas ela é mostrada como "enriquecimento curricular". Como fazer para que ela conte como optativa?
+                </a></h1>
+            </div>
+            <div id="bloco-1">
+                <h1><a href="Respostas/resposta9.html">
+                    Meu estágio conflita com meu horário de disciplinas, o que fazer?
+                </a></h1>
+            </div>
+            <div id="bloco-1">
+                <h1><a href="Respostas/resposta10.html">
+                    Não consegui vaga em uma disciplina em nenhuma das etapas de matrícula. A coordenação do curso pode me matricular?
+                </a></h1>
+            </div>
+            <div id="trocarView">
+                <a id="trocaItem"  href="faqAcademico.html">1</a>
+                <span id="trocaItem">2</span>
+                <span id="trocaItem">...</span>
+                
             </div>
         </section>
     </main>
     <footer>
         <div id="rodape-info">
             <a href="">Sobre a UTFPR | </a>
-            <a href="">Contato | </a>
+            <a href="contato.html">Contato | </a>
             <a href="">Informações DAINF</a>
             <div id="direitos">
                 <span>© Todos os direitos reservados</span>

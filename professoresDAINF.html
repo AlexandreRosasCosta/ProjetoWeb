@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>
     <link rel="stylesheet" href="CSS/professoresDAINF.css">
     <title>Navegação</title>
 </head>
@@ -14,12 +17,62 @@
                 <a href="index.html"><img class="logo-dainf" src="Imagens/logo-DAINF-7_1.png" alt="Logo Dainf"></a>
             </picture>
             <nav>
-                <ul>
-                    <a href="index.html"><li class="botao" id="home">Home</li></a>
-                    <a href="navegacao.html"><li class="botao" id="nave">Navegação</li></a>
-                    <a href="login.html"><li class="botao" id="login">Login</li></a>
-                </ul>
-            </nav>
+                <div class="menu-btn">
+                  <i class="fas fa-bars"></i>
+                </div>
+            
+                <div class="side-bar active">
+                  <div class="close-btn">
+                    <i class="fas fa-times"></i>
+                  </div>
+                  <div class="menu">
+                    <div class="item"><a href="index.html"><i class="fa fa-home"></i>Página Inicial</a></div>
+                    <div class="item">
+                    <div class="item"><a href="faqAcademico.html">FAQ Acadêmico</a></div>
+                    <div class="item">
+                    <div class="item"><a href="contato.html">Contato</a></div>
+                    <div class="item">
+                      <a class="sub-btn">DAINF<i class="fas fa-angle-right dropdown"></i></a>
+                      <div class="sub-menu">
+                        <a href="professoresDAINF.html" class="sub-item">Docentes</a>
+                      </div>
+                    </div>
+                    <a class="sub-btn">Atividades Complementares<i class="fas fa-angle-right dropdown"></i></a>
+                    <div class="sub-menu">
+                      <a href="atividadeComplementar.html" class="sub-item">COADS</a>
+                    </div>
+                    <div class="item"><a href="paginaCentralEstagios.html">Vagas de Estágio</a></div>
+                    <div class="item">
+                    <div class="item"><a href="login.html">Login</a></div>
+                    <div class="item">
+                    <div class="item"><a href="sobreDAINF.html"><i class="fas fa-info-circle"></i>Sobre</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </header>
+            
+              <script type="text/javascript">
+                  $(document).ready(function(){
+            
+                  $('.sub-btn').click(function(){
+                    $(this).next('.sub-menu').slideToggle();
+                    $(this).find('.dropdown').toggleClass('rotate');
+                  });
+            
+                  $('.menu-btn').click(function(){
+                    $('.side-bar').addClass('active');
+                    $('.menu-btn').css("visibility", "hidden");
+                  });
+            
+                  $('.close-btn').click(function(){
+                    $('.side-bar').removeClass('active');
+                    $('.menu-btn').css("visibility", "visible");
+                  });
+            
+              });
+              </script>
         </section>
     </header>
     <main>
